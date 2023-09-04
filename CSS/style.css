@@ -1,0 +1,586 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ######################### HTML element style ######################### */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.14em;
+    font-weight: 500;
+}
+h1, h2{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.14em;
+    font-weight: 400;
+}
+/* ######################### utility class ######################### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-green{
+    color: rgb(12, 158, 12);
+}
+.text-white{
+    color: rgb(238, 236, 236);
+}
+.text-black{
+    color: rgb(27, 26, 26);
+}
+.text-grey{
+    color: #696969;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background:rgb(238, 236, 236);
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background: rgb(12, 158, 12);
+    color: white;
+}
+.btn-secondary{
+    border: 3px solid rgb(12, 158, 12);
+    border-radius: 1.5em;
+    background: white;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+.btn-secondary:hover{
+    background: rgb(12, 158, 12);
+    color: white;
+}
+.bg-dark{
+    background: #313232;
+}
+/* ######################### Header Style ########################## */
+header{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url('../Images/header_img.jpeg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.navbar{
+    padding: 1rem;
+}
+nav .logo{
+    float: left;
+}
+nav .nav-items{
+    float: right;
+    margin-top: 1em;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar .nav-items a{
+    padding-bottom: 0.4rem;
+}
+.navbar a:hover{
+    border-bottom: 2px solid rgb(238, 236, 236);
+}
+
+/* ######################### header content ######################### */
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-content h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+/* ######################### Showcase section styling ######################### */
+.showcase{
+    background: #f7f7f7;
+    padding: 10rem 0;
+}
+.row{
+    height: 34rem;
+    box-shadow: 0px 0px 10px 0px rgba(8, 8, 8, 0.3);
+}
+.showcase .row1 ,.showcase .row2{
+    margin: 5rem 0px;
+}
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,
+.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+.row .text-box{
+    height: 100%;
+    padding: 3rem;   
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+/* ######################### Feature ######################### */
+.features{
+    padding: 10rem 0;
+}
+.box-wraper{
+    box-shadow: 0px 0px 10px 0px rgba(8, 8, 8, 0.3);
+}
+.features .box{
+    color: white;
+    width: 33.3%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+.box-wraper::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.features .box1,
+.features .box3{
+    background: #313232;
+}
+.features .box2{
+    background: rgb(12, 158, 12);
+}
+/* ######################### Footer link ######################### */
+.footer{
+    padding: 1rem;
+}
+.footer .container{
+    text-align: center;
+    padding: 2rem ;
+    color: white;
+}
+.footer a{
+    color: white;
+    padding: 1rem 1.5rem;
+}
+.footer p{
+    padding: 0.5rem 0;
+}
+/*################################################## About ################################################## */
+.about{
+    padding: 5rem 0;
+}
+.about-heading{
+    border-bottom: 0.5rem solid rgb(12, 158, 12);
+}
+
+/* ######################### About list ######################### */
+.about .list{
+    margin-top: 3rem;
+}
+.about .list-item{
+    padding: 0  18rem;
+}
+.about .box1{
+    float: left;
+    width: 50%;
+}
+.about .box2{
+    float: left;
+    width: 50%;
+}
+.list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.list li::before{
+    content: '\2713';
+    color: rgb(12, 158, 12);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+/* ######################### Count Style ######################### */
+.count{
+    margin: 3rem;
+}
+.count-item{
+    text-align: center;
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+.count::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count p{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+/* ######################### About Footer ######################### */
+.about-footer{
+    /* border: 2px solid red; */
+    background: rgb(12, 158, 12);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgb(32, 32, 32);
+}
+.about-footer .left{
+    float: left;
+    width: 70%;
+}
+.about-footer .right{
+    float: left;
+    width: 30%; 
+    text-align: right;
+}
+.para{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+.btn-footer{
+    text-align: center;
+    border: 4px solid white;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+}
+.about-footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ################################################## Contact Us ################################################## */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+.company-address{
+    height: 76rem;
+    background: white;
+    float: left;
+    width: 49%;
+    box-shadow: 0 0 7px rgb(107, 107, 107);
+    padding: 1rem;
+}
+.company-address .address-group{
+    margin-bottom: 3rem;
+}
+.company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.company-address img{
+    display: inline-block;
+    max-width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ######################### form style ######################### */
+.form{
+    height: 76rem;
+    background: white;
+    float: right;
+    width: 49%;
+    font-size: 1.6rem;
+    box-shadow: 0 0 7px rgb(107, 107, 107);
+    padding: 1rem;
+}
+.form h1::after{
+    content: ' ';
+    border: 2.5px solid rgb(12, 158, 12);
+    width: 100%;
+    display : block;  
+}
+.form-group{
+    padding: 1rem 0;
+}
+.form label{
+    display: block;
+}
+.form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form label::after{
+    content: '*';
+    color: rgb(12, 158, 12) ;
+}
+.form textarea{
+    width: 100%;
+    height: 25rem;
+}
+.form button{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: rgb(12, 158, 12);
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: white;
+    color:rgb(12, 158, 12) ;
+    border: 2px solid rgb(12, 158, 12);
+    font-size: bold;
+}
+/* ################################################## Media Query ################################################## */
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .header-content h2{
+        display: none;
+    }
+    .header-content i{
+        margin: 1rem;
+    }
+    .showcase .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .row .text-box h1{
+        font-size: 2.5rem;
+    }
+    .row .text-box p{
+        letter-spacing: 0.1rem;
+    }
+    .box-wraper{
+        box-shadow: none;
+    }
+    .box-wraper .box{
+        float: none;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgba(12, 12, 12, 0.527);
+    }
+    .box-wraper .box1, .box-wraper .box2{
+        margin-bottom: 1.5rem;
+    }
+    .footer .links a{
+        padding: 0.7rem;
+
+    }
+    .footer .links a i{
+        font-size: 2rem;
+    }
+    .footer p{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    /* ########################## About ############################### */
+    .list .list-item{
+        padding: 0.2rem;
+    }
+    .count span{
+        font-size: 2rem;
+    }
+    .count p{
+        font-size: 1.1rem;
+    }
+    .about-footer .left, .about-footer .right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .about-footer .para , .about-footer a{
+        font-size: 2rem;
+    }
+    /* ######################## Contact Us ############################ */
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+/* ################################################## Media Query ################################################# */
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .header-content h2{
+        font-size: 3rem;
+    }
+    .header-content i{
+        margin: 1rem;
+    }
+    .showcase .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .row .text-box h1{
+        font-size: 2.5rem;
+    }
+    .row .text-box p{
+        letter-spacing: 0.1rem;
+    }
+    .box-wraper{
+        box-shadow: none;
+    }
+    .box-wraper .box{
+        float: none;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgba(12, 12, 12, 0.527);
+    }
+    .box-wraper .box1, .box-wraper .box2{
+        margin-bottom: 1.5rem;
+    }
+    .footer .links a{
+        padding: 0.7rem;
+
+    }
+    .footer .links a i{
+        font-size: 2rem;
+    }
+    .footer p{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    /* ########################## About ############################### */
+    .list .list-item{
+        padding: 0.2rem;
+    }
+    .count span{
+        font-size: 2rem;
+    }
+    .count p{
+        font-size: 1.1rem;
+    }
+    .about-footer .left, .about-footer .right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .about-footer .para , .about-footer a{
+        font-size: 2rem;
+    }
+    /* ######################## Contact Us ############################ */
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+/* ############################################ Media Query ###################################################### */
+@media(min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+    .showcase .row{
+        /* border: 2px solid red; */
+        height: 43rem;
+    }
+    .about-footer .para, .about-footer a{
+        font-size: 1.6rem;
+    }   
+}
+/* ######################################### Media query for landscape view ######################################## */
+@media(orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
